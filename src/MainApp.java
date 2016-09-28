@@ -24,9 +24,16 @@ public class MainApp {
 			System.out.println("Enter a radius");
 			double inputRadius = input.nextDouble();
 			Circle c = new Circle (inputRadius);
+			 
+			//call the getFormattedCircumference method and pass through the circle object
+			System.out.println("Circumference: " + c.getFormattedCircumference());
 			
-			c.getArea();
-			System.out.println(c.getFormattedArea());
+			//call the getFormattedArea method and pass through the circle object
+			System.out.println("Area: " + c.getFormattedArea());
+			
+			
+			
+			
 			
 			
 			

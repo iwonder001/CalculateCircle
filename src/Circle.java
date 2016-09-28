@@ -38,10 +38,9 @@ public class Circle {
 	}
 //	public static int getObjectCount(){
 //		return objectCount;
+	//need to increase counter. put this under the created circle object in the main app
 //	}
 //	
-	
-	//create getters & setters
 	
 	
 	//public Circle (double radius);
