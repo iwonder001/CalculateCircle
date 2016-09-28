@@ -2,8 +2,8 @@
 public class Circle {
 	
 	//declare instance variables
-	public double circumference;
-	public double area;
+	//public double circumference;
+	//public double area;
 	public double radius;
 	public int objectCount;
 

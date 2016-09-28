@@ -16,15 +16,17 @@ public class MainApp {
 //		String inputRadius = input.nextLine();
 		
 		//make circle object in the main app to call the methods on
-		Circle c = new Circle ();
+		//Circle c = new Circle (inputRadius);
 		
 		//set up a loop to output circumference and area after user enters radius
 		
 		while (userContinue){
 			System.out.println("Enter a radius");
-			String inputRadius = input.nextLine();
+			double inputRadius = input.nextDouble();
+			Circle c = new Circle (inputRadius);
 			
 			c.getArea();
+			System.out.println(c.getFormattedArea());
 			
 			
 			
