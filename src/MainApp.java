@@ -6,6 +6,8 @@ public class MainApp {
 		// set up continue
 		String inputContinue;
 		boolean userContinue = true;
+		double i =0;
+		
 
 		// Welcome Statement
 		System.out.println("Welcome to the Circle Tester");
@@ -15,14 +17,12 @@ public class MainApp {
 
 		 /* set up a loop to output circumference and area after user enters
 		  radius*/
-
+      
 		while (userContinue) {
-			Validator.getInt(input, "Enter a radius: ");
-			//System.out.print("Enter a radius: ");
+			 i = Validator.getInt(input, "Enter a radius: ");
 			
-			double inputRadius = input.nextDouble();
 			// make circle object in the main app to call the methods on
-			Circle c = new Circle(inputRadius);
+			Circle c = new Circle(i);
 			Circle.getObjectCount();
 
 			/* call the getFormattedCircumference method and pass through the
@@ -39,7 +39,6 @@ public class MainApp {
 			System.out.println("Continue? (y/n): ");
 			/*scanning for an answer. Taking input from the scanner and putting
 			  it into inputContinue*/
-			inputContinue = input.nextLine();
 			inputContinue = input.nextLine();
 
 			if (inputContinue.equalsIgnoreCase("y")) {
