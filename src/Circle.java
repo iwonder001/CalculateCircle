@@ -31,7 +31,10 @@ public class Circle {
 		double circumference = 2 * Math.PI * radius;
 		return circumference;
 	}
-	
+	public String getFormattedCircumference(){
+		String myCircumference = formatNumber(getCircumference());
+		return myCircumference;
+	}
 	
 	
 	//create getters & setters
