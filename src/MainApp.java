@@ -17,7 +17,9 @@ public class MainApp {
 		  radius*/
 
 		while (userContinue) {
-			System.out.print("Enter a radius: ");
+			Validator.getInt(input, "Enter a radius: ");
+			//System.out.print("Enter a radius: ");
+			
 			double inputRadius = input.nextDouble();
 			// make circle object in the main app to call the methods on
 			Circle c = new Circle(inputRadius);
