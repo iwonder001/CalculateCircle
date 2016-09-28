@@ -5,12 +5,13 @@ public class Circle {
 	//public double circumference;
 	//public double area;
 	public double radius;
-	public static int objectCount;
-	static int x =0;
+	public static int counter=0;
+	int x =0;
 
 	//create constructor
 	public Circle (double rad) {
-		radius = rad;	
+		radius = rad;
+		counter++;
 	}
 	//get methods for area
 	public double getArea(){
@@ -38,8 +39,7 @@ public class Circle {
 		return myCircumference;
 	}
 	public static int getObjectCount(){
-		int myObjectCount = x++;
-		return myObjectCount;
+		return counter;
 	//need to increase counter. put this under the created circle object in the main app
 	}
 	

@@ -16,11 +16,11 @@ public class MainApp {
 		//set up a loop to output circumference and area after user enters radius
 		
 		while (userContinue){
-			System.out.println("Enter a radius");
+			System.out.print("Enter a radius: ");
 			double inputRadius = input.nextDouble();
 			//make circle object in the main app to call the methods on
 			Circle c = new Circle (inputRadius);
-			int j = c.getObjectCount();
+			Circle.getObjectCount();
 			 
 			//call the getFormattedCircumference method and pass through the circle object
 			System.out.println("Circumference: " + c.getFormattedCircumference());
@@ -30,27 +30,23 @@ public class MainApp {
 			
 			
 			
-			
-			
-			
-			
-			
 			//As if continue and capture user input
 			System.out.println("Continue? (y/n): ");
 			/*scanning for an answer. 
 			Taking input from the scanner and putting it into inputContinue */
 			inputContinue = input.nextLine();
-			//
-			if(inputContinue.equals("yes")) {
+			inputContinue = input.nextLine();
+			
+			if(inputContinue.equalsIgnoreCase("y")) {
 				userContinue = true;
 			} else {
 				userContinue = false;
-				System.out.println("Goodbye.  You created " + j + " Circle object(s).");
+				//System.out.println("Goodbye.  You created " + j + " Circle object(s).");
 			}//if/else loop close
-			
+			//System.out.println("Goodbye.  You created " + j + " Circle object(s).");
 		}//close while loop
 		
-		
+		System.out.println("Goodbye.  You created " + Circle.getObjectCount() + " Circle object(s).");
 
 	}//close psvm
 
