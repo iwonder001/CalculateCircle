@@ -24,6 +24,11 @@ public class MainApp {
 			System.out.println("Enter a radius");
 			String inputRadius = input.nextLine();
 			
+			c.getArea();
+			
+			
+			
+			
 			//As if continue and capture user input
 			System.out.println("Continue? (y/n): ");
 			/*scanning for an answer. 
@@ -34,7 +39,7 @@ public class MainApp {
 				userContinue = true;
 			} else {
 				userContinue = false;
-			}
+			}//if/else loop close
 			
 		}//close while loop
 		
