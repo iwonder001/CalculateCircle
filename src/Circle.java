@@ -3,8 +3,9 @@ public class Circle {
 	
 	//declare instance variables
 	public double circumference;
-	public double Area;
+	public double area;
 	public double radius;
+	public int objectCount;
 
 	//create constructor
 	public Circle (double rad) {
@@ -35,7 +36,10 @@ public class Circle {
 		String myCircumference = formatNumber(getCircumference());
 		return myCircumference;
 	}
-	
+//	public static int getObjectCount(){
+//		return objectCount;
+//	}
+//	
 	
 	//create getters & setters
 	

@@ -1,9 +1,17 @@
+import java.util.Scanner;
 
 public class MainApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		String inputRadius = input.nextLine();
+		
+		//make circle object in the main app to call the methods on
+		Circle c = new Circle ();
+		
+		
 
-	}
+	}//close psvm
 
-}
+}//close MainApp class
