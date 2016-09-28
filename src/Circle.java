@@ -5,7 +5,8 @@ public class Circle {
 	//public double circumference;
 	//public double area;
 	public double radius;
-	public int objectCount;
+	public static int objectCount;
+	static int x =0;
 
 	//create constructor
 	public Circle (double rad) {
@@ -36,11 +37,12 @@ public class Circle {
 		String myCircumference = formatNumber(getCircumference());
 		return myCircumference;
 	}
-//	public static int getObjectCount(){
-//		return objectCount;
+	public static int getObjectCount(){
+		int myObjectCount = x++;
+		return myObjectCount;
 	//need to increase counter. put this under the created circle object in the main app
-//	}
-//	
+	}
+	
 	
 	
 	//public Circle (double radius);

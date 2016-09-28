@@ -11,18 +11,14 @@ public class MainApp {
 		System.out.println("Welcome to the Circle Tester");
 		
 		//Get user radius input 
-		Scanner input = new Scanner(System.in);
-//		System.out.println("Enter a radius");
-//		String inputRadius = input.nextLine();
-		
-		//make circle object in the main app to call the methods on
-		//Circle c = new Circle (inputRadius);
-		
+		Scanner input = new Scanner(System.in)
+			
 		//set up a loop to output circumference and area after user enters radius
 		
 		while (userContinue){
 			System.out.println("Enter a radius");
 			double inputRadius = input.nextDouble();
+			//make circle object in the main app to call the methods on
 			Circle c = new Circle (inputRadius);
 			 
 			//call the getFormattedCircumference method and pass through the circle object
